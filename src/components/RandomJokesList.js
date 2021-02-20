@@ -5,20 +5,21 @@ const RandomJokesList = ({jokes, joke, onSelectedJoke, onSavedToggle}) => {
 
     const jokeListItems = jokes.map((joke, index) => {
         return (
-        <li onClick={() => {onSelectedJoke(joke)}} key={index}>
+        <li className="listed-joke-item" onClick={() => {onSelectedJoke(joke)}} key={index}>
             {joke.setup}
-            <button onClick={() => {onSavedToggle(joke)}}>STAR</button>
         </li>
         )
     })
 
     return (
-        <div className="random-jokes">
+        <div>
             <h2>Random Jokes</h2>
-            <ul>
+            <div className="random-jokes">
+            <ul className="listed-jokes">
                 {jokeListItems}
             </ul>
-            <JokePunchline joke={joke}/>
+            <JokePunchline joke={joke} onSavedToggle={onSavedToggle}/>
+            </div>
         </div>
     )
 }

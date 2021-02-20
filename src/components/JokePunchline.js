@@ -1,6 +1,6 @@
 import React from 'react';
 
-const JokePunchline = ({joke}) => {
+const JokePunchline = ({joke, onSavedToggle}) => {
 
     if(!joke) {
         return (null)
@@ -10,6 +10,9 @@ const JokePunchline = ({joke}) => {
         <div className="setup-punchline">
             <p>{joke.setup}</p>
             <p>{joke.punchline}</p>
+            <button onClick={() => {onSavedToggle(joke)}}>
+                {joke.saved ? 'Unsave' : 'Save'}
+            </button>
         </div>
     )
 }

@@ -40,11 +40,11 @@ const JokeContainer = () => {
             <>
             <NavBar />
             <div className="jokes-container">
-                <h1>Jokes</h1>
+                {/* <h1>Jokes</h1> */}
                 <Switch>
                     <Route exact path="/" component={HomePage} />
                     <Route exact path="/jokes" render={() => <RandomJokesList jokes={randomJokes} onSelectedJoke={handleSelectedJoke} joke={selectedJoke} onSavedToggle={handleSavedToggle}/> } />
-                    <Route exact path="/saved" render={() => <SavedJokes jokes={randomJokes} />} />
+                    <Route exact path="/saved" render={() => <SavedJokes jokes={randomJokes} onSavedToggle={handleSavedToggle}/>} />
                 </Switch>
                 
             </div>

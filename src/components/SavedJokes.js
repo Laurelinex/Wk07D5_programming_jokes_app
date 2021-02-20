@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SavedJokes = ({jokes}) => {
+const SavedJokes = ({jokes, onSavedToggle}) => {
 
     if(!jokes) {
         return(null)
@@ -15,6 +15,9 @@ const SavedJokes = ({jokes}) => {
             <div key={index}>
                 <p>{joke.setup}</p>
                 <p>{joke.punchline}</p>
+                <button onClick={() => {onSavedToggle(joke)}}>
+                    {joke.saved ? 'Unsave' : 'Save'}
+                </button>
             </div>
         )
     })

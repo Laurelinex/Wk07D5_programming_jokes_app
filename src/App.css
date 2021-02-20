@@ -1,9 +1,18 @@
+* {
+  background-color: rgb(36, 31, 31);
+  color: rgb(226, 204, 204);
+}
+
 .App {
   text-align: center;
+  border: solid indianred;
 }
 
 .nav-list {
   border: solid purple;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 .jokes-container {
@@ -15,6 +24,8 @@
 }
 
 .random-jokes {
+  display: flex;
+  justify-content: space-around;
   border: solid green
 }
 
@@ -24,4 +35,20 @@
 
 .setup-punchline {
   border: solid pink;
+}
+
+.listed-jokes {
+  border: solid teal;
+  width: 70%;
+}
+
+.listed-joke-item {
+  border: solid turquoise;
+  list-style: none;
+  text-align: left;
+  margin: 10px;
+}
+
+.listed-joke-item:hover {
+  font-size: 1.5rem;
 }
