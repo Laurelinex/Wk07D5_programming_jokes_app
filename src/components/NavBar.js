@@ -11,7 +11,7 @@ const NavBar = () => {
                 <Link to="/jokes">Random Jokes</Link>
             </li>
             <li>
-                <Link to="/favourites">Favourites</Link>
+                <Link to="/saved">Saved</Link>
             </li>
         </ul>
     )

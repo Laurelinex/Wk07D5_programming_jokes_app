@@ -1,9 +1,10 @@
 import React from 'react';
+import JokePunchline from "./JokePunchline";
 
-const RandomJokesList = ({jokes}) => {
+const RandomJokesList = ({jokes, joke, onSelectedJoke}) => {
 
     const jokeListItems = jokes.map((joke, index) => {
-        return <li key={index}>{joke.setup}</li>
+        return <li onClick={() => {onSelectedJoke(joke)}} key={index}>{joke.setup}</li>
     })
 
     return (
@@ -12,6 +13,7 @@ const RandomJokesList = ({jokes}) => {
             <ul>
                 {jokeListItems}
             </ul>
+            <JokePunchline joke={joke}/>
         </div>
     )
 }
