@@ -18,6 +18,10 @@
   border: solid green
 }
 
-.favourite-jokes {
+.saved-jokes {
   border: solid blue;
+}
+
+.setup-punchline {
+  border: solid pink;
 }

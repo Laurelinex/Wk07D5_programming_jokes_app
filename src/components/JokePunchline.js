@@ -7,7 +7,8 @@ const JokePunchline = ({joke}) => {
     }
 
     return (
-        <div className="punchline">
+        <div className="setup-punchline">
+            <p>{joke.setup}</p>
             <p>{joke.punchline}</p>
         </div>
     )
