@@ -13,7 +13,7 @@ const RandomJokesList = ({jokes, joke, onSelectedJoke, onSavedToggle}) => {
 
     return (
         <div>
-            <h2>Random Jokes</h2>
+            {/* <h2>Random Jokes</h2> */}
             <div className="random-jokes">
             <ul className="listed-jokes">
                 {jokeListItems}

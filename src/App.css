@@ -1,54 +1,136 @@
 * {
-  background-color: rgb(36, 31, 31);
-  color: rgb(226, 204, 204);
+  background-color: #1d1c1c;
+  color: #fdfdfd;
+  ;
+}
+
+.palette {
+  color: #e5eb5b;
+  color: #444441;
+  color: #8b944b;
+  color: #6f6e5f;
+  color: #1d1c1c;
+  color: #fdfdfd;
 }
 
 .App {
   text-align: center;
-  border: solid indianred;
+  /* border: solid indianred; */
 }
 
 .nav-list {
-  border: solid purple;
+  /* border: solid purple; */
+  background-color: #444441;
+  height: 70px;
   list-style: none;
   display: flex;
   justify-content: space-around;
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 60px;
 }
 
-.jokes-container {
+.nav-list li {
+  background-color: #444441;
+  margin-top: 25px;
+}
+
+.nav-list a {
+  background-color: #e5eb5b;
+  color: #1d1c1c;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 10px;
+  padding: 10px;
+  border: solid #1d1c1c;
+}
+
+.nav-list a:focus {
+  background-color: #1d1c1c;
+  color: #e5eb5b;
+  border: solid #e5eb5b;
+}
+
+/* .jokes-container {
   border: solid red;
-}
+} */
 
-.homepage {
+/* .homepage {
   border: solid yellow
-}
+} */
 
 .random-jokes {
   display: flex;
-  justify-content: space-around;
-  border: solid green
+  /* justify-content: space-around; */
+  /* border: solid green */
 }
 
-.saved-jokes {
-  border: solid blue;
+.saved-joke {
+  border: solid #fdfdfd;
+  background-color: #1d1c1c;
+  color: #fdfdfd;
+  border-radius: 5px;
+  height: fit-content;
+  padding: 5px;
+  font-weight: bold;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .setup-punchline {
-  border: solid pink;
+  background-color: #1d1c1c;
+  border: solid #e5eb5b;
+  border-radius: 5px;
+  height: fit-content;
+  padding: 5px;
+  font-weight: bold;
+  margin: 10px;
+  width: 30%;
+}
+
+.setup-punchline p {
+  background-color: #1d1c1c;
+  color: #e5eb5b;
 }
 
 .listed-jokes {
-  border: solid teal;
+  /* border: solid teal; */
   width: 70%;
+  padding-left: 10px;
+  margin-top: 0;
 }
 
 .listed-joke-item {
-  border: solid turquoise;
+  border: solid #fdfdfd;
+  background-color: #1d1c1c;
+  color: #fdfdfd;
+  padding: 5px;
+  border-radius: 5px;
   list-style: none;
   text-align: left;
   margin: 10px;
+  font-weight: bold;
+  min-height: 60px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* text-align: left; */
 }
 
 .listed-joke-item:hover {
   font-size: 1.5rem;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  /* border:1px solid;
+  border-radius: 50px; */
+  box-sizing: border-box;
+  text-decoration:none;
+}
+
+img {
+  max-width: 40%;
 }

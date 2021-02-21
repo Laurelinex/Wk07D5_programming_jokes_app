@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaRegHeart, FaHeart } from "react-icons/fa";
 
 const JokePunchline = ({joke, onSavedToggle}) => {
 
@@ -11,7 +12,7 @@ const JokePunchline = ({joke, onSavedToggle}) => {
             <p>{joke.setup}</p>
             <p>{joke.punchline}</p>
             <button onClick={() => {onSavedToggle(joke)}}>
-                {joke.saved ? 'Unsave' : 'Save'}
+                {joke.saved ? <FaHeart/> : <FaRegHeart />}
             </button>
         </div>
     )
